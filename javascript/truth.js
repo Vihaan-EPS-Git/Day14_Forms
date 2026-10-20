@@ -13,17 +13,31 @@ function greet() {
 function trivia1() {
     let triviaAnswer = document.getElementById("trivia1-answer");
 
-    //get values from form
     let chocolateSelected = document.getElementById("chocolate").checked;
     let tunaSelected = document.getElementById("tuna").checked;
     let honeySelected = document.getElementById("honey").checked;
 
-    //give results based off of what they selected
     if (chocolateSelected) {
-        triviaAnswer.innerHTML = fname + ", you are wrong. Sweeth tooth?";
+        triviaAnswer.innerHTML = fname + ", you are wrong. Sweet tooth?";
     } else if (tunaSelected) {
         triviaAnswer.innerHTML = fname + ", you are wrong. Rotten Tuna. Yuck!";
     } else if (honeySelected) {
-        triviaAnswer.innerHTML = fname + ", you are correct!.";
+        triviaAnswer.innerHTML = fname + ", you are correct!";
+    }
+}
+
+function truths() {
+    let truthsResult = document.getElementById("truths-result");
+
+    let truth1Selected = document.getElementById("truth1").checked;
+    let truth2Selected = document.getElementById("truth2").checked;
+    let truth3Selected = document.getElementById("truth3").checked;
+
+    if (truth1Selected) {
+        truthsResult.innerHTML = fname + ", you are correct! I actually don't have a pet dragon.";
+    } else if (truth2Selected) {
+        truthsResult.innerHTML = fname + ", you are wrong. I have been to 10 different countries.";
+    } else if (truth3Selected) {
+        truthsResult.innerHTML = fname + ", you are wrong! I can speak 1 language fluently.";
     }
 }

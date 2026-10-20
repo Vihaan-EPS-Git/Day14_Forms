@@ -11,7 +11,7 @@
     <h1>Vihaan's Two Truths and a Lie Game</h1>
     <hr>
 
-    <h2>Introductions</h2>
+    <h2>Introductions (Do this First!)</h2>
     <form action="" id="name-form">
         <label for="fname">First Name:</label><br />
         <input type="text" name="fname" id="fname"><br />
@@ -36,8 +36,25 @@
         <input type="radio" name="trivia1" value="a" id="honey">
         <label for="honey">Honey</label><br />
     </form>
+    <br />
     <input type="button" value="SUBMIT" onclick="trivia1();">
     <p id="trivia1-result"></p>
+
+    <form action="">
+        <h2>Two Truths and a Lie</h2>
+        <p>Please select the statement you believe is the lie:</p>
+
+        <input type="radio" name="truths" value="1" id="truth1">
+        <label for="truth1">I have a pet dragon.</label><br />
+        <input type="radio" name="truths" value="2" id="truth2">
+        <label for="truth2">I have been to 10 different countries.</label><br />
+        <input type="radio" name="truths" value="3" id="truth3">
+        <label for="truth3">I can speak 1 language fluently.</label><br />
+    </form>
+    <br />
+    <input type="button" value="SUBMIT" onclick="truths();">
+
+    <p id="truths-result"></p>
 
     <script src="javascript/truth.js"></script>
 </body>
